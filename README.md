@@ -90,3 +90,8 @@ We used joblib module to save and load Python objects on the disk.
 # Make Prediction on New Inputs
 We loaded our decision tree model back using joblib.load.</br>
 We defined a helper function to make predictions on new inputs.
+# Result
+We have used Chi-Square test to find the objective of our project.</br>
+The hypothesis statements for the test are:</br>
+H0: Suicide rate is independent on age group</br>
+H1: Suicide rate is dependent on age group
