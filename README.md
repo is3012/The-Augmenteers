@@ -38,7 +38,7 @@ We'll follow the general steps below to prepare dataset for training.</br>
 6. Scale numeric values</br>
 7. Encode categorical columns</br>
 # 1. Create the target column
-Before we split the dataset into train/validation/test set, let's create our target column suicide_risk (i.e. high / low risk) using the information from suicides/100k pop.
+Before we split the dataset into train/validation/test set, let's create our target column suicide_rate (i.e. high / low risk) using the information from suicides/100k pop.
 If the value of suicides/100k pop is higher than the mean of suicides/100k pop, we will classify the suicide risk as high, and low otherwise.
 # 2. Create Train, Validation and Test Sets
 Let's split our dataset into three parts.
@@ -52,7 +52,7 @@ Often, not all the columns in the dataset are useful for training a model. We wi
 
 year: this is not relevant as we are predicting the suicide risk of a particular person in the future
 suicides_no, population: contains redundant information as suicides/100k pop
-suicides/100k pop: contains redundant information as suicide_risk
+suicides/100k pop: contains redundant information as suicide_rate
 gdp_for_year ($): contains redundant information as gdp_per_capita ($)
 generation: contains redundant information as age. Each generation is corresponding to a specific age group under age.
 # 4. Identify numerical and categorical columns
@@ -68,4 +68,11 @@ To train the machine learning models, we need to transform the values of categor
 Here, we will use OneHotEncoder from sklearn.preprocessing. What it does is to convert each category value into a new column and assign a 1 or 0 (True/False) value to the column. This has the benefit of not weighting a value improperly.
 
 # Decision Tree
-A decision tree is a flowchart-like structure in which each internal node represents a "test" on an attribute
+A decision tree is a flowchart-like structure in which each internal node represents a "test" on an attribute.</br>
+We imported sklearn library for accessing the decision tree model.</br>
+We trained a decision tree classifier to classify the suicide rate into high or low based on the input data.
+# Evaluation
+We imported accuracy score and confusion matric from sklearn library to calculate accuracy.</br>
+The decision tree has been trained. We evaluated its performance using the accuracy score.</br>
+The training accuracy is 100%. We evaluate the model using the validation set.</br>
+The validation set accuracy is about 88%, which is better than always predicting "low".</br>
