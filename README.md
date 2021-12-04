@@ -29,3 +29,11 @@ development)</br>
   2. We plotted a barplot using seaborn library, which visualizes the number of suicides by age and gender.</br>Older adults have a higher tendency of committing suicide. This might be related to factors such as loneliness, social connectedness, chronic diseases, etc.</br>
   3. We plotted a heatmap using the seaborn library, we visualized the correlation between numeric variables and suicide.</br>
 # Prepare the Data for training
+We'll follow the general steps below to prepare dataset for training.</br>
+1. Create the target column</br>
+2. Create a train/validation/test split</br>
+3. Identify input and target columns</br>
+4. Identify numeric and categorical columns</br>
+5. Impute missing numeric values</br>
+6. Scale numeric values</br>
+7. Encode categorical columns</br>
