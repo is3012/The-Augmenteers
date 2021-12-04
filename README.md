@@ -61,3 +61,7 @@ We'll skip the step of missing value imputation as we have handled the missing v
 Let's scale the numeric features (i.e., HDI for year, gdp_per_capita) to a range of value of 0 to 1. This ensures that no particular numeric features has a disproportionate impact on the model's loss. It also smoothens the training process.
 
 Let's use MinMaxScaler from sklearn.preprocessing to scale values to (0,1) range.
+# 6. Encode categorical columns
+To train the machine learning models, we need to transform the values of categorical columns into numbers. There are different ways to encode the data, such as label encoding and one-hot encoding.
+
+Here, we will use OneHotEncoder from sklearn.preprocessing. What it does is to convert each category value into a new column and assign a 1 or 0 (True/False) value to the column. This has the benefit of not weighting a value improperly.
