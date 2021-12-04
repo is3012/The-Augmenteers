@@ -22,4 +22,9 @@ development)</br>
 • HDI for year: Human Development Index</br>
 </br>
   We then checked the missing and duplicate values in our dataset. 'HDI for year' column has NaN values.</br>
-  We have used another dataset to compute the NaN values. The dataset in provided in the repository.
+  We have used another dataset to compute the NaN values. The dataset in provided in the repository.</br>
+  # Explanatory Data Analysis
+  1. We plotted a line graph using seaborn library, which shows the suicide incidence over the past 20 years.</br>
+  The suicide incidence of the countries in our dataset peaked in 1995 and followed a downtrend since then. However, in 2015, there was a sudden surge of number of suicides.</br>
+  2. We plotted a barplot using seaborn library, which visualizes the number of suicides by age and gender.</br>Older adults have a higher tendency of committing suicide. This might be related to factors such as loneliness, social connectedness, chronic diseases, etc.</br>
+  3. We plotted a heatmap using the seaborn library, we visualized the correlation between numeric variables and suicide.</br>
