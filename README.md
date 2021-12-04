@@ -6,7 +6,7 @@ We have used Suicides Rates Overview 1985-2014 dataset in our project.
 We imported the dataset using read_csv() function.
 While understanding the dataset, we observed that our dataset contained 12 attributes/columns and there are 27,820 rows.
 This Dataset contains a combination of numerical and categorical features.
-Categorical
+Categorical\n
 • Country
 • Year: 1986 to 2016
 • Sex: Male/female 
