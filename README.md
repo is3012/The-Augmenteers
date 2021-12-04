@@ -47,3 +47,11 @@ Train set: used to train a model
 Validation set: used to tune model hyperparameters (e.g., regularization parameter) and choose between models during training
 Test set: used to compare different models and report the model's final accuracy
 In general, we can pick random subset of rows to create train/validation/test set in a distribution of 60-20-20 rule. However, when working with time-series data, it's better to split the dataset based on time, so the model was trained using the data in the past, and evaluated using the data in the future.
+# 3. Identify Input and Target Columns
+Often, not all the columns in the dataset are useful for training a model. We will ignore the following columns:
+
+year: this is not relevant as we are predicting the suicide risk of a particular person in the future
+suicides_no, population: contains redundant information as suicides/100k pop
+suicides/100k pop: contains redundant information as suicide_risk
+gdp_for_year ($): contains redundant information as gdp_per_capita ($)
+generation: contains redundant information as age. Each generation is corresponding to a specific age group under age.
