@@ -57,3 +57,7 @@ gdp_for_year ($): contains redundant information as gdp_per_capita ($)
 generation: contains redundant information as age. Each generation is corresponding to a specific age group under age.
 # 4. Identify numerical and categorical columns
 We'll skip the step of missing value imputation as we have handled the missing values of HDI for year before performing exploratory data analysis. There is no null data in other columns.
+# 5. Scale Numeric Features
+Let's scale the numeric features (i.e., HDI for year, gdp_per_capita) to a range of value of 0 to 1. This ensures that no particular numeric features has a disproportionate impact on the model's loss. It also smoothens the training process.
+
+Let's use MinMaxScaler from sklearn.preprocessing to scale values to (0,1) range.
