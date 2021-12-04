@@ -55,3 +55,5 @@ suicides_no, population: contains redundant information as suicides/100k pop
 suicides/100k pop: contains redundant information as suicide_risk
 gdp_for_year ($): contains redundant information as gdp_per_capita ($)
 generation: contains redundant information as age. Each generation is corresponding to a specific age group under age.
+# 4. Identify numerical and categorical columns
+We'll skip the step of missing value imputation as we have handled the missing values of HDI for year before performing exploratory data analysis. There is no null data in other columns.
