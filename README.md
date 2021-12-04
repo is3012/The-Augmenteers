@@ -92,6 +92,15 @@ We loaded our decision tree model back using joblib.load.</br>
 We defined a helper function to make predictions on new inputs.
 # Result
 We have used Chi-Square test to find the objective of our project.</br>
+We used scipy moule to calculate the critical value and contingency table</br>
 The hypothesis statements for the test are:</br>
 H0: Suicide rate is independent on age group</br>
-H1: Suicide rate is dependent on age group
+H1: Suicide rate is dependent on age group</br>
+From the result of Chi-square test, we rejected the null hypothesis. And we could say that Suicide rate and age are dependent.
+# Conclusion
+From the project we have learned the working of machine learning algorithm (decision tree) on our dataset. 
+We have also learned how to train the decision tree to predict whether there is any change in the suicide rate based on the factors such as 
+gender, group, GDP, HDI per year and country. 
+We also learned how to tune the parameters of the model to increase the efficiency of the model. The final conclusion of the project is that, male population commit more suicide than female, irrespective of age group and generation.
+
+
