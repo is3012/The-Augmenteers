@@ -76,3 +76,10 @@ We imported accuracy score and confusion matric from sklearn library to calculat
 The decision tree has been trained. We evaluated its performance using the accuracy score.</br>
 The training accuracy is 100%. We evaluate the model using the validation set.</br>
 The validation set accuracy is about 88%, which is better than always predicting "low".</br>
+# Hyperparameter Tuning
+Next, we tuned some hyperparameters to see if we can improve the accuracy of the model on the validation set.
+
+One common problem of decision tree is that it tends to overfit the training data. In our case, the training accuracy is 100%, which basically means that the model has memorized all the train data (=overfitting). In order to make the model generalize better to unseen data, let's try to tune two hyperparameters.
+
+max_depth: controls the overall complexity of a decision tree (adequate assuming that the tree built is symmetric)
+min_samples_split: minimum number of samples required to split an internal node
