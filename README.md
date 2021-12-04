@@ -20,3 +20,6 @@ This Dataset contains a combination of numerical and categorical features.</br>
 development)</br>
 • GDP per capita for year: GDP/population</br>
 • HDI for year: Human Development Index</br>
+</br>
+  We then checked the missing and duplicate values in our dataset. 'HDI for year' column has NaN values.</br>
+  We have used another dataset to compute the NaN values. The dataset in provided in the repository.
