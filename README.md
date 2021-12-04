@@ -39,5 +39,11 @@ We'll follow the general steps below to prepare dataset for training.</br>
 7. Encode categorical columns</br>
 # 1. Create the target column
 Before we split the dataset into train/validation/test set, let's create our target column suicide_risk (i.e. high / low risk) using the information from suicides/100k pop.
-
 If the value of suicides/100k pop is higher than the mean of suicides/100k pop, we will classify the suicide risk as high, and low otherwise.
+# 2. Create Train, Validation and Test Sets
+Let's split our dataset into three parts.
+
+Train set: used to train a model
+Validation set: used to tune model hyperparameters (e.g., regularization parameter) and choose between models during training
+Test set: used to compare different models and report the model's final accuracy
+In general, we can pick random subset of rows to create train/validation/test set in a distribution of 60-20-20 rule. However, when working with time-series data, it's better to split the dataset based on time, so the model was trained using the data in the past, and evaluated using the data in the future.
