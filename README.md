@@ -37,3 +37,7 @@ We'll follow the general steps below to prepare dataset for training.</br>
 5. Impute missing numeric values</br>
 6. Scale numeric values</br>
 7. Encode categorical columns</br>
+# 1. Create the target column
+Before we split the dataset into train/validation/test set, let's create our target column suicide_risk (i.e. high / low risk) using the information from suicides/100k pop.
+
+If the value of suicides/100k pop is higher than the mean of suicides/100k pop, we will classify the suicide risk as high, and low otherwise.
