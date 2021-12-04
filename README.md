@@ -81,5 +81,9 @@ Next, we tuned some hyperparameters to see if we can improve the accuracy of the
 
 One common problem of decision tree is that it tends to overfit the training data. In our case, the training accuracy is 100%, which basically means that the model has memorized all the train data (=overfitting). In order to make the model generalize better to unseen data, let's try to tune two hyperparameters.
 
-max_depth: controls the overall complexity of a decision tree (adequate assuming that the tree built is symmetric)
-min_samples_split: minimum number of samples required to split an internal node
+max_depth: controls the overall complexity of a decision tree (adequate assuming that the tree built is symmetric)</br>
+min_samples_split: minimum number of samples required to split an internal node</br>
+The optimal hyperparameter combination is max_depth of 34 and min_samples_split of 2. We evaluated the performance of this model on test set.</br>
+The test set accuracy score is pretty good at about 91%! Let's save our model (including weights, hyperparameters) so we do not need to retrain the model from scratch every time we need to use it.</br>
+# Save Trained Model
+We used joblib module to save and load Python objects on the disk.
