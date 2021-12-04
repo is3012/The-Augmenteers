@@ -87,3 +87,6 @@ The optimal hyperparameter combination is max_depth of 34 and min_samples_split 
 The test set accuracy score is pretty good at about 91%! Let's save our model (including weights, hyperparameters) so we do not need to retrain the model from scratch every time we need to use it.</br>
 # Save Trained Model
 We used joblib module to save and load Python objects on the disk.
+# Make Prediction on New Inputs
+We loaded our decision tree model back using joblib.load.</br>
+We defined a helper function to make predictions on new inputs.
